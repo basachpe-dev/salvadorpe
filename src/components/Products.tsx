@@ -1,0 +1,78 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ShoppingCart } from "lucide-react";
+import coffeeBag from "@/assets/coffee-bag.jpg";
+
+const products = [
+  {
+    name: "Salvador Original",
+    description: "Nuestro blend clásico con notas de chocolate y caramelo",
+    weight: "250g",
+    price: "S/ 45.00",
+  },
+  {
+    name: "Salvador Premium",
+    description: "Granos seleccionados con notas frutales y cítricas",
+    weight: "250g",
+    price: "S/ 55.00",
+  },
+  {
+    name: "Salvador Reserva",
+    description: "Edición limitada de nuestra mejor cosecha",
+    weight: "250g",
+    price: "S/ 65.00",
+  },
+];
+
+const Products = () => {
+  return (
+    <section id="productos" className="py-32 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16 animate-fade-up">
+          <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
+            Nuestros Cafés
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Cada bolsa de Salvador es un viaje sensorial a la ceja de selva peruana
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {products.map((product, index) => (
+            <Card 
+              key={index} 
+              className="group hover:shadow-xl transition-all duration-500 animate-fade-in overflow-hidden border-border/50"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <CardContent className="p-0">
+                <div className="aspect-square overflow-hidden bg-card">
+                  <img
+                    src={coffeeBag}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-2xl font-semibold">{product.name}</h3>
+                    <span className="text-sm text-muted-foreground">{product.weight}</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">{product.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-semibold">{product.price}</span>
+                    <Button variant="default" size="sm" className="group/btn">
+                      <ShoppingCart className="mr-2 h-4 w-4 transition-transform group-hover/btn:scale-110" />
+                      Agregar
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Products;

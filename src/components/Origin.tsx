@@ -7,7 +7,7 @@ const Origin = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-up">
             <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">
-              De Omia al mundo
+              De Omia <span className="text-accent">al mundo</span>
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>

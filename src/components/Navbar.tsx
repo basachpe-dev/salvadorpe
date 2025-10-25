@@ -30,7 +30,7 @@ const Navbar = () => {
           >
             Productos
           </button>
-          <Button variant="default" size="sm">
+          <Button variant="accent" size="sm">
             Comprar
           </Button>
         </div>

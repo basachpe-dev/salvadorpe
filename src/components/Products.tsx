@@ -30,7 +30,7 @@ const Products = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
-            Nuestros Cafés
+            Nuestros <span className="text-accent">Cafés</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Cada bolsa de Salvador es un viaje sensorial a la ceja de selva peruana
@@ -59,8 +59,8 @@ const Products = () => {
                   </div>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-semibold">{product.price}</span>
-                    <Button variant="default" size="sm" className="group/btn">
+                    <span className="text-2xl font-semibold text-accent">{product.price}</span>
+                    <Button variant="accent" size="sm" className="group/btn">
                       <ShoppingCart className="mr-2 h-4 w-4 transition-transform group-hover/btn:scale-110" />
                       Agregar
                     </Button>

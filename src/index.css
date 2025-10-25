@@ -112,6 +112,10 @@ All colors MUST be HSL.
     @apply font-semibold;
     letter-spacing: -0.02em;
   }
+
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
 }
 
 @layer utilities {

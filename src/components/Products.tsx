@@ -29,6 +29,7 @@ const Products = () => {
     <section id="productos" className="py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-up">
+          <p className="text-secondary font-medium text-sm mb-4 tracking-wide uppercase">Nuestro Catálogo</p>
           <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
             Nuestros <span className="text-accent">Cafés</span>
           </h2>
@@ -55,7 +56,7 @@ const Products = () => {
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-2">
                     <h3 className="text-2xl font-semibold">{product.name}</h3>
-                    <span className="text-sm text-muted-foreground">{product.weight}</span>
+                    <span className="text-sm text-secondary font-medium bg-secondary/10 px-3 py-1 rounded-full">{product.weight}</span>
                   </div>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <div className="flex items-center justify-between">

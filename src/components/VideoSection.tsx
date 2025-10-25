@@ -3,6 +3,7 @@ const VideoSection = () => {
     <section className="py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-up">
+          <p className="text-secondary font-medium text-sm mb-4 tracking-wide uppercase">Detrás de Escena</p>
           <h2 className="text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
             Nuestro <span className="text-accent">Proceso</span>
           </h2>

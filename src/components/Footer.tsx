@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Salvador</h3>
+            <h3 className="text-xl font-semibold mb-4">Cafe Salvador</h3>
             <p className="text-muted-foreground">
               Café premium de la ceja de selva peruana.
             </p>

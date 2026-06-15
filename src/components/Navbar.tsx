@@ -30,6 +30,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <button onClick={scrollToTop} className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
+          Cafe Salvador
+        </button>
         
         <div className="hidden md:flex items-center gap-8">
           <button

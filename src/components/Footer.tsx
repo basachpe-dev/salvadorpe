@@ -1,4 +1,4 @@
-const Footer = () => {
+import { Link } from "react-router-dom";
   return (
     <footer className="border-t border-border/50 bg-card">
       <div className="container mx-auto px-6 py-12">
@@ -27,6 +27,11 @@ const Footer = () => {
                 <a href="#productos" className="hover:text-foreground transition-colors">
                   Productos
                 </a>
+              </li>
+              <li>
+                <Link to="/terminos-y-condiciones" className="hover:text-foreground transition-colors">
+                  Términos y Condiciones
+                </Link>
               </li>
             </ul>
           </div>

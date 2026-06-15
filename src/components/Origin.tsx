@@ -6,7 +6,7 @@ const Origin = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-up">
-            <p className="text-secondary font-medium text-sm mb-4 tracking-wide uppercase">Nuestro Origen</p>
+            <p className="text-primary font-medium text-sm mb-4 tracking-wide uppercase">Nuestro Origen</p>
             <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">
               De Omia <span className="text-accent">al mundo</span>
             </h2>
@@ -21,7 +21,7 @@ const Origin = () => {
                 mantienen tradiciones ancestrales. El resultado es un café con notas 
                 distintivas que reflejan la riqueza de nuestra tierra.
               </p>
-              <p className="text-foreground font-medium border-l-4 border-secondary pl-4">
+              <p className="text-foreground font-medium border-l-4 border-primary pl-4">
                 Salvador no es solo café. Es la esencia de Perú en cada taza.
               </p>
             </div>

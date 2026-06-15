@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 pt-24 pb-16 relative z-10">
         <div className="max-w-3xl animate-fade-up">
-          <p className="text-secondary font-medium text-lg mb-4 tracking-wide">CAFE SALVADOR</p>
+          <p className="text-primary font-medium text-lg mb-4 tracking-wide">CAFE SALVADOR</p>
           <h2 className="text-6xl md:text-7xl lg:text-8xl font-semibold mb-6 tracking-tight">
             Café de la
             <br />
@@ -41,7 +41,7 @@ const Hero = () => {
               Explorar Productos
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="outline" size="lg" className="border-secondary/30 hover:border-secondary hover:bg-secondary/10">
+            <Button variant="outline" size="lg" className="border-primary/30 hover:border-primary hover:bg-primary/10">
               Conoce Nuestro Origen
             </Button>
           </div>

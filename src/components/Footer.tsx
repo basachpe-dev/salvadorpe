@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-card">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Cafe Salvador</h3>
             <p className="text-muted-foreground">
@@ -36,15 +36,6 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Ubicación</h4>
-            <p className="text-muted-foreground">
-              Omia, Rodríguez de Mendoza
-              <br />
-              Amazonas, Perú
-            </p>
           </div>
         </div>
 

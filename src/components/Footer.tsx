@@ -35,6 +35,11 @@ const Footer = () => {
                   Términos y Condiciones
                 </Link>
               </li>
+              <li>
+                <Link to="/politicas-de-privacidad" className="hover:text-foreground transition-colors">
+                  Políticas de Privacidad
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

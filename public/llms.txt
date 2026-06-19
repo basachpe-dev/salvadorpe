@@ -1,0 +1,11 @@
+# Café Salvador
+
+> Café premium de la ceja de selva peruana, producido en Omia, Rodríguez de Mendoza, por BIO AGRO SACH S.A.C.
+
+Café Salvador ofrece café de origen único cultivado en las alturas de la selva alta del Perú. Catálogo: Salvador Original, Salvador Premium y Salvador Reserva.
+
+## Pages
+
+- [Inicio](/): Marca, origen, video y catálogo de Café Salvador.
+- [Términos y Condiciones](/terminos-y-condiciones): Condiciones de uso y venta de la tienda.
+- [Políticas de Privacidad](/politicas-de-privacidad): Tratamiento de datos personales según la Ley N° 29733.

@@ -1,9 +1,18 @@
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Terms = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Términos y Condiciones | Café Salvador</title>
+        <meta name="description" content="Lee los términos y condiciones de uso y venta de la tienda virtual de Café Salvador (BIO AGRO SACH S.A.C.)." />
+        <link rel="canonical" href="/terminos-y-condiciones" />
+        <meta property="og:title" content="Términos y Condiciones | Café Salvador" />
+        <meta property="og:description" content="Términos y condiciones de uso y venta de Café Salvador." />
+        <meta property="og:url" content="https://salvadorpe.lovable.app/terminos-y-condiciones" />
+      </Helmet>
       <Navbar />
       
       <main className="pt-24 pb-16">

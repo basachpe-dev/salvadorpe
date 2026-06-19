@@ -22,11 +22,11 @@ const Hero = () => {
       <div className="container mx-auto px-6 pt-24 pb-16 relative z-10">
         <div className="max-w-3xl animate-fade-up">
           <p className="text-primary font-medium text-lg mb-4 tracking-wide">CAFE SALVADOR</p>
-          <h2 className="text-6xl md:text-7xl lg:text-8xl font-semibold mb-6 tracking-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-semibold mb-6 tracking-tight">
             Café de la
             <br />
             ceja de selva
-          </h2>
+          </h1>
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl font-light">
             Salvador nace en las alturas de Omia, Rodríguez de Mendoza, Perú. 
             Cada taza cuenta la historia de nuestra tierra.

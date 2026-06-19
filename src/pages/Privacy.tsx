@@ -1,9 +1,18 @@
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Políticas de Privacidad | Café Salvador</title>
+        <meta name="description" content="Conoce cómo Café Salvador (BIO AGRO SACH S.A.C.) protege tus datos personales según la Ley N° 29733 del Perú." />
+        <link rel="canonical" href="/politicas-de-privacidad" />
+        <meta property="og:title" content="Políticas de Privacidad | Café Salvador" />
+        <meta property="og:description" content="Política de privacidad y tratamiento de datos personales de Café Salvador." />
+        <meta property="og:url" content="https://salvadorpe.lovable.app/politicas-de-privacidad" />
+      </Helmet>
       <Navbar />
       
       <main className="pt-24 pb-16">

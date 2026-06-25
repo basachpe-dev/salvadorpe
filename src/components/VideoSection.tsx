@@ -1,3 +1,5 @@
+import processimg from "@/assets/Omia-proceso.jpg";
+
 const VideoSection = () => {
   return (
     <section className="py-32 bg-background relative overflow-hidden">
@@ -14,7 +16,8 @@ const VideoSection = () => {
 
         <div className="max-w-5xl mx-auto animate-fade-in">
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-card">
-            {/* Placeholder para video - el usuario puede reemplazar con su video */}
+            
+            {/* VIDEO COMENTADO
             <video
               autoPlay
               loop
@@ -29,14 +32,23 @@ const VideoSection = () => {
               />
               Tu navegador no soporta el elemento de video.
             </video>
-            
+            */}
+
+            {/* Imagen del proceso */}
+            <img
+              src={processimg}
+              alt="Nuestro proceso"
+              className="w-full h-full object-cover"
+            />
+
             {/* Overlay sutil */}
             <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
           </div>
-
+          {/* Overlay sutil 
           <p className="text-center text-sm text-muted-foreground mt-6">
             Reemplaza este video con tu propio contenido en el código
           </p>
+          */}
         </div>
       </div>
     </section>

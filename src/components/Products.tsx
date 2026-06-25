@@ -1,26 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShoppingCart } from "lucide-react";
-import coffeeBag1 from "@/assets/Firefly-CS250.png;
+import coffeeBag1 from "@/assets/Firefly-CS250.png"; // <- imagen para Salvador Original
+import coffeeBag2 from "@/assets/Firefly-CS500.png"; // <- imagen para Salvador Premium
+import coffeeBag3 from "@/assets/Firefly-CS1000.png"; // <- imagen para Salvador Reserva
 
 const products = [
   {
-    name: "Salvador Original",
+    name: "Salvador Clasico",
     description: "Nuestro blend clásico con notas de chocolate y caramelo",
     weight: "250gr",
     price: "S/ 31.00",
+    image: coffeeBag1, // <- imagen 250
   },
   {
-    name: "Salvador Premium",
+    name: "Salvador Recargado",
     description: "Granos seleccionados con notas frutales y cítricas",
     weight: "500gr",
     price: "S/ 60.00",
+    image: coffeeBag2, // <- imagen 500
   },
   {
-    name: "Salvador Reserva",
+    name: "Salvador Revolucionario",
     description: "Edición limitada de nuestra mejor cosecha",
     weight: "1kg",
     price: "S/ 110.00",
+    image: coffeeBag3, // <- imagen 1000
   },
 ];
 
@@ -48,7 +53,7 @@ const Products = () => {
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden bg-card">
                   <img
-                    src={coffeeBag1}
+                    src={product.image} // <- ahora usa la imagen de cada producto
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />

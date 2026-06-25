@@ -1,4 +1,4 @@
-import processimg from "@/assets/Omia-proceso.JPG";
+import processimg from "@/assets/proceso.jpg";
 
 const VideoSection = () => {
   return (

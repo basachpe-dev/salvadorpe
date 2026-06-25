@@ -40,6 +40,11 @@ const Footer = () => {
                   Políticas de Privacidad
                 </Link>
               </li>
+              <li>
+                <a href="https://forms.gle/vzhPQt595vryXsdM6" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Libro de Reclamaciones
+                </a>
+              </li>
             </ul>
           </div>
         </div>

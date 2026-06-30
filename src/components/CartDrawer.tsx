@@ -66,7 +66,7 @@ const CartDrawer = () => {
       clearCart();
     } catch (err) {
       console.error(err);
-      alert("Hubo un problema al procesar tu pedido. Por favor intenta nuevamente o escríbenos por WhatsApp.");
+      alert("Estamos implementando la pasarela segura de pagos. Disculpanos por el inconveniente.");
     } finally {
       setLoading(false);
     }

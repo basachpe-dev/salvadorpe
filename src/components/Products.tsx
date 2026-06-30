@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShoppingCart } from "lucide-react";
+import ProductModal from "@/components/ProductModal";
 import coffeeBag1 from "@/assets/Firefly-CS250.png"; // <- imagen para Salvador Original
 import coffeeBag2 from "@/assets/Firefly-CS500.png"; // <- imagen para Salvador Premium
 import coffeeBag3 from "@/assets/Firefly-CS1000.png"; // <- imagen para Salvador Reserva
@@ -30,6 +32,14 @@ const products = [
 ];
 
 const Products = () => {
+  const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleAddClick = (product: typeof products[0]) => {
+    setSelectedProduct(product);
+    setModalOpen(true);
+  };
+
   return (
     <section id="productos" className="py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -66,7 +76,7 @@ const Products = () => {
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-semibold text-accent">{product.price}</span>
-                    <Button variant="accent" size="sm" className="group/btn">
+                    <Button variant="accent" size="sm" className="group/btn" onClick={() => handleAddClick(product)}>
                       <ShoppingCart className="mr-2 h-4 w-4 transition-transform group-hover/btn:scale-110" />
                       Agregar
                     </Button>
@@ -77,6 +87,8 @@ const Products = () => {
           ))}
         </div>
       </div>
+
+      <ProductModal open={modalOpen} onOpenChange={setModalOpen} product={selectedProduct} />
     </section>
   );
 };

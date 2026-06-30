@@ -1,9 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { totalItems, setIsCartOpen } = useCart();
 
   const scrollToSection = (id: string) => {
     if (location.pathname !== "/") {
@@ -32,29 +35,44 @@ const Navbar = () => {
         <button onClick={scrollToTop} className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
           Cafe Salvador
         </button>
-        
-        <div className="hidden md:flex items-center gap-8">
+
+        <div className="flex items-center gap-4 md:gap-8">
+          <div className="hidden md:flex items-center gap-8">
+            <button
+              onClick={() => scrollToSection("inicio")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Inicio
+            </button>
+            <button
+              onClick={() => scrollToSection("origen")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Origen
+            </button>
+            <button
+              onClick={() => scrollToSection("productos")}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Productos
+            </button>
+            <Button variant="accent" size="sm" onClick={() => scrollToSection("productos")}>
+              Comprar
+            </Button>
+          </div>
+
           <button
-            onClick={() => scrollToSection("inicio")}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            onClick={() => setIsCartOpen(true)}
+            className="relative p-2 hover:bg-muted rounded-full transition-colors"
+            aria-label="Carrito de compras"
           >
-            Inicio
+            <ShoppingCart className="h-5 w-5" />
+            {totalItems > 0 && (
+              <span className="absolute -top-1 -right-1 bg-accent text-accent-foreground text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">
+                {totalItems}
+              </span>
+            )}
           </button>
-          <button
-            onClick={() => scrollToSection("origen")}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Origen
-          </button>
-          <button
-            onClick={() => scrollToSection("productos")}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Productos
-          </button>
-          <Button variant="accent" size="sm">
-            Comprar
-          </Button>
         </div>
       </div>
     </nav>

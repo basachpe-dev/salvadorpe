@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -11,7 +12,7 @@ const Terms = () => {
         <link rel="canonical" href="/terminos-y-condiciones" />
         <meta property="og:title" content="Términos y Condiciones | Café Salvador" />
         <meta property="og:description" content="Términos y condiciones de uso y venta de Café Salvador." />
-        <meta property="og:url" content="https://salvadorpe.lovable.app/terminos-y-condiciones" />
+        <meta property="og:url" content="https://salvadorpe.vercel.app/terminos-y-condiciones" />
       </Helmet>
       <Navbar />
       
@@ -33,7 +34,7 @@ const Terms = () => {
           <section className="mb-10">
             <h2 className="text-xl font-semibold mb-4">1. Información General</h2>
             <p className="text-muted-foreground leading-relaxed">
-              El presente sitio web es operado por BIO AGRO SACH S.A.C., empresa constituida en la República del Perú, identificada con RUC 20611475366 y con domicilio legal en Jiron Santiago Antunez de Mayolo 227 La Molina.
+              El presente sitio web es operado por BIO AGRO SACH S.A.C., empresa constituida en la República del Perú, identificada con RUC 20611475366 y con domicilio legal en Jr. Santiago Antúnez de Mayolo 227, La Molina, Lima.
             </p>
           </section>
 
@@ -82,22 +83,23 @@ const Terms = () => {
 
           <section className="mb-10">
             <h2 className="text-xl font-semibold mb-4">5. Políticas de Cambios y Devoluciones</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Al tratarse de productos alimenticios e insumos perecibles (café), solo se aceptarán cambios o devoluciones bajo las siguientes condiciones:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
-              <li>El producto presenta un defecto de empaque de fábrica o llegó dañado por el transporte.</li>
-              <li>El producto entregado no corresponde al solicitado en la orden de compra.</li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              El cliente deberá notificar el inconveniente en un plazo máximo de 48 horas tras recibir el pedido, adjuntando fotos del estado del producto al correo de contacto.
+            <p className="text-muted-foreground leading-relaxed">
+              Contamos con una política detallada de cambios y devoluciones. Al tratarse de productos alimenticios, aplican condiciones especiales. Consulta nuestra{" "}
+              <Link to="/politicas-de-cambios-y-devoluciones" className="text-primary hover:underline">
+                Política de Cambios y Devoluciones
+              </Link>{" "}
+              para más información.
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="text-xl font-semibold mb-4">6. Libro de Reclamaciones</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Conforme a lo establecido por el Código de Protección y Defensa del Consumidor del Perú, ponemos a disposición de nuestros clientes un Libro de Reclamaciones Virtual de acceso permanente en el pie de página de este sitio web. Las quejas o reclamos serán atendidos en un plazo máximo de quince (15) días hábiles.
+              Conforme a lo establecido por el Código de Protección y Defensa del Consumidor del Perú (Ley N° 29571), ponemos a disposición de nuestros clientes un{" "}
+              <Link to="/libro-de-reclamaciones" className="text-primary hover:underline">
+                Libro de Reclamaciones Virtual
+              </Link>{" "}
+              de acceso permanente. Las quejas o reclamos serán atendidos en un plazo máximo de <strong>30 días calendario</strong>.
             </p>
           </section>
 

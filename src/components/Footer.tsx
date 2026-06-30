@@ -41,9 +41,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="https://forms.gle/vzhPQt595vryXsdM6" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-                  Libro de Reclamaciones
-                </a>
+                <Link to="/politicas-de-cambios-y-devoluciones" className="hover:text-foreground transition-colors">
+                  Políticas de Cambios y Devoluciones
+                </Link>
+              </li>
+              <li>
+                <Link to="/libro-de-reclamaciones" className="hover:text-foreground transition-colors font-medium text-primary">
+                  📋 Libro de Reclamaciones
+                </Link>
               </li>
             </ul>
           </div>
